@@ -1,0 +1,65 @@
+.app-container{
+  background-color: aqua;
+}
+/* navbar */
+.nav-container {
+  padding: 1.25rem; /* Equivalent to p-5 */
+  padding-bottom: 0; /* Equivalent to pb-0 */
+  display: flex; /* Equivalent to flex */
+  flex-wrap: wrap; /* Equivalent to flex-wrap */
+  justify-content: center; /* Equivalent to sm:justify-between for small screens */
+  justify-content: space-between; /* Equivalent to justify-between for screens larger than small */
+  align-items: center; /* Equivalent to items-center */
+  border-bottom: 1px solid #d1d5db; /* Equivalent to border-b */
+  border-bottom-color: #4b5563; /* Equivalent to dark:border-gray-700 */
+  border-bottom-color: #e5e7eb; /* Equivalent to border-gray-200 */
+  background-color: #e5e7eb;
+}
+.nav-bar{
+  display: flex; /* Equivalent to flex */
+  justify-content: space-between; /* Equivalent to justify-between */
+  align-items: center; /* Equivalent to items-center */
+  gap: 0.625rem; /* Equivalent to space-x-5, assuming 1rem = 16px */
+  width: 100vw; /* Equivalent to w-screen */
+}
+.logo{
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    background-color: #3b82f6; /* Equivalent to bg-blue-500 */
+    font-weight: bold; /* Equivalent to font-bold */
+    color: #fff; /* Equivalent to text-white */
+    padding-top: 0.25rem; /* Equivalent to py-1 */
+    padding-bottom: 0.25rem; /* Equivalent to py-1 */
+    padding-left: 0.5rem; /* Equivalent to px-2 */
+    padding-right: 0.5rem; /* Equivalent to px-2 */
+    border-radius: 0.375rem; /* Equivalent to rounded */
+  }
+  
+  /* Dark mode styles */
+  @media (prefers-color-scheme: dark) {
+    .logo {
+      background-color: #f9fafb; /* Equivalent to dark:bg-gray-50 */
+      color: #1f2937; /* Equivalent to dark:text-gray-900 */
+    }
+  }
+  /* styles.css */
+.dark-btn {
+  font-size: 1.25rem; /* Equivalent to text-xl */
+  background-color: #fff; /* Equivalent to bg-white */
+  border: 1px solid #e5e7eb; /* Equivalent to border */
+  border-radius: 9999px; /* Equivalent to rounded-full (using a large value for maximum roundness) */
+  padding: 0.25rem 0.5rem; /* Equivalent to px-2 and py-1 */
+  transition: box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+.dark-btn:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Equivalent to hover:shadow-lg */
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark-btn {
+    background-color: #f9fafb; /* Equivalent to dark:bg-gray-50 */
+    color: #1f2937; /* Equivalent to dark:text-gray-900 */
+  }
+}
+
+  
