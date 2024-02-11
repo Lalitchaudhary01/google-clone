@@ -1,8 +1,9 @@
+// App.js
 import React, { useState } from "react";
-
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Routes from "./components/Routes";
+import { Outlet } from "react-router-dom";
+
 const App = () => {
   const [darkTheme, setDarkTheme] = useState(false);
 
@@ -10,7 +11,7 @@ const App = () => {
     <div className={darkTheme ? "dark" : ""}>
       <div className="app-container">
         <Navbar setDarkTheme={setDarkTheme} darkTheme={darkTheme} />
-        <Routes />
+        <Outlet /> {/* Use Outlet to render nested routes */}
         <Footer />
       </div>
     </div>
